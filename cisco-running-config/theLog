@@ -1,25 +1,19 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.03.30 13:43:32 =~=~=~=~=~=~=~=~=~=~=~=
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.03.30 18:55:06 =~=~=~=~=~=~=~=~=~=~=~=
 Hello world
 
 User Access Verification
 
 Password: 
-switch1_praktik>enable
+CiscoSwitch_Praktik>ea nable
 Password: 
-switch1_praktik#conf t
+CiscoSwitch_Praktik#hostn     conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
-switch1_praktik(config)#hostname Sw1?
-WORD  
-
-switch1_praktik(config)#hostname Sw1O ?
-WORD  
-
-switch1_praktik(config)#hostname Sw1
-Sw1(config)#s exit
-Sw1#show run
+CiscoSwitch_Praktik(config)#hostname Simon  _switcj h
+Simon_switch(config)#exit
+Simon_switch#show run
 Building configuration...
 
-Current configuration : 1374 bytes
+Current configuration : 1383 bytes
 !
 version 12.1
 no service pad
@@ -27,7 +21,7 @@ service timestamps debug uptime
 service timestamps log uptime
 service password-encryption
 !
-hostname Sw1
+hostname Simon_switch
 !
 enable secret 5 $1$zQLt$br/61CynQr2rrH39NuF3z.
 !
@@ -113,31 +107,4 @@ line vty 5 15
  --More--         !
 end
 
-Sw1#show ip interfae bri     ce biref    rief
-Interface                  IP-Address      OK? Method Status                Protocol
-Vlan1                      192.168.1.25    YES NVRAM  up                    up      
-FastEthernet0/1            unassigned      YES unset  down                  down    
-FastEthernet0/2            unassigned      YES unset  down                  down    
-FastEthernet0/3            unassigned      YES unset  down                  down    
-FastEthernet0/4            unassigned      YES unset  down                  down    
-FastEthernet0/5            unassigned      YES unset  down                  down    
-FastEthernet0/6            unassigned      YES unset  down                  down    
-FastEthernet0/7            unassigned      YES unset  down                  down    
-FastEthernet0/8            unassigned      YES unset  down                  down    
-FastEthernet0/9            unassigned      YES unset  down                  down    
-FastEthernet0/10           unassigned      YES unset  down                  down    
- --More--         FastEthernet0/11           unassigned      YES unset  down                  down    
-FastEthernet0/12           unassigned      YES unset  down                  down    
-FastEthernet0/13           unassigned      YES unset  down                  down    
-FastEthernet0/14           unassigned      YES unset  down                  down    
-FastEthernet0/15           unassigned      YES unset  down                  down    
-FastEthernet0/16           unassigned      YES unset  down                  down    
-FastEthernet0/17           unassigned      YES unset  down                  down    
-FastEthernet0/18           unassigned      YES unset  down                  down    
-FastEthernet0/19           unassigned      YES unset  down                  down    
-FastEthernet0/20           unassigned      YES unset  down                  down    
-FastEthernet0/21           unassigned      YES unset  down                  down    
-FastEthernet0/22           unassigned      YES unset  down                  down    
- --More--         FastEthernet0/23           unassigned      YES unset  up                    up      
-FastEthernet0/24           unassigned      YES unset  down                  down    
-Sw1#  
+Simon_switch# 
