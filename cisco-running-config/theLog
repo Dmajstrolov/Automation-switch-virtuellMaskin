@@ -1,110 +1,21 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.03.30 18:55:06 =~=~=~=~=~=~=~=~=~=~=~=
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.03.30 18:57:47 =~=~=~=~=~=~=~=~=~=~=~=
 Hello world
 
 User Access Verification
 
 Password: 
-CiscoSwitch_Praktik>ea nable
+Simon_switch>enable
 Password: 
-CiscoSwitch_Praktik#hostn     conf t
+Simon_switch#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
-CiscoSwitch_Praktik(config)#hostname Simon  _switcj h
-Simon_switch(config)#exit
-Simon_switch#show run
-Building configuration...
+Simon_switch(config)#con   hostname sw1_praktik
+sw1_praktik(config)#xit
+                    ^
+% Invalid input detected at '^' marker.
 
-Current configuration : 1383 bytes
-!
-version 12.1
-no service pad
-service timestamps debug uptime
-service timestamps log uptime
-service password-encryption
-!
-hostname Simon_switch
-!
-enable secret 5 $1$zQLt$br/61CynQr2rrH39NuF3z.
-!
-ip subnet-zero
-!
-no ip domain-lookup
-ip ssh time-out 120
-ip ssh authentication-retries 3
-!
-spanning-tree mode pvst
-no spanning-tree optimize bpdu transmission
-spanning-tree extend system-id
-!
- --More--         !
-!
-!
-interface FastEthernet0/1
- switchport mode access
- spanning-tree portfast
-!
-interface FastEthernet0/2
-!
-interface FastEthernet0/3
-!
-interface FastEthernet0/4
-!
-interface FastEthernet0/5
-!
-interface FastEthernet0/6
-!
-interface FastEthernet0/7
-!
-interface FastEthernet0/8
-!
-interface FastEthernet0/9
-!
- --More--         interface FastEthernet0/10
-!
-interface FastEthernet0/11
-!
-interface FastEthernet0/12
-!
-interface FastEthernet0/13
-!
-interface FastEthernet0/14
-!
-interface FastEthernet0/15
-!
-interface FastEthernet0/16
-!
-interface FastEthernet0/17
-!
-interface FastEthernet0/18
-!
-interface FastEthernet0/19
-!
-interface FastEthernet0/20
-!
-interface FastEthernet0/21
- --More--         !
-interface FastEthernet0/22
-!
-interface FastEthernet0/23
-!
-interface FastEthernet0/24
-!
-interface Vlan1
- ip address 192.168.1.25 255.255.255.0
- no ip route-cache
-!
-ip default-gateway 192.168.1.1
-ip http server
-banner motd ^CHello world^C
-!
-line con 0
-line vty 0 4
- exec-timeout 15 0
- password 7 14141B180F0B
- login
-line vty 5 15
- login
-!
- --More--         !
-end
+sw1_praktik(config)#ei  xit   sh  exit
+sw1_praktik#ip inter rface brief
+            ^
+% Invalid input detected at '^' marker.
 
-Simon_switch# 
+sw1_praktik#
